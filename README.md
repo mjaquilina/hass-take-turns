@@ -2,6 +2,8 @@
 
 A Home Assistant integration that manages rotating lists of people, useful for tracking whose turn it is for chores, bedtime stories, choosing movies, etc.
 
+![Screenshot of a dashboard card set up to track a Take Turns entity.](screenshots/Screenshot.png)
+
 ## Installation
 
 ### Method 1: HACS (Recommended)

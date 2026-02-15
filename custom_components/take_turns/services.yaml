@@ -1,0 +1,32 @@
+next_turn:
+  name: Next Turn
+  description: Advance to the next person in the rotation
+  fields:
+    entity_id:
+      name: Entity
+      description: The take_turns sensor to advance
+      required: true
+      example: "sensor.bedtime_story"
+      selector:
+        entity:
+          domain: sensor
+
+set_person:
+  name: Set Person
+  description: Set a specific person as current
+  fields:
+    entity_id:
+      name: Entity
+      description: The take_turns sensor to modify
+      required: true
+      example: "sensor.bedtime_story"
+      selector:
+        entity:
+          domain: sensor
+    person:
+      name: Person
+      description: The name of the person to set as current (must match exactly)
+      required: true
+      example: "Mom"
+      selector:
+        text:
