@@ -2,6 +2,7 @@
   "domain": "take_turns",
   "name": "Take Turns",
   "documentation": "https://github.com/mjaquilina/hass-take-turns",
+  "issue_tracker": "https://github.com/mjaquilina/hass-take-turns/issues",
   "codeowners": [],
   "requirements": [],
   "version": "1.0.0",
