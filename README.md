@@ -4,6 +4,19 @@ A Home Assistant integration that manages rotating lists of people, useful for t
 
 ## Installation
 
+### Method 1: HACS (Recommended)
+
+1. Open HACS in Home Assistant
+2. Go to "Integrations"
+3. Click the three dots menu (top right) → "Custom repositories"
+4. Add repository URL: `https://github.com/mjaquilina/hass-take-turns`
+5. Select category: "Integration"
+6. Click "Add"
+7. Click "Download" on the Take Turns card
+8. Restart Home Assistant
+
+### Method 2: Manual Installation
+
 1. Copy the `custom_components/take_turns` folder to your Home Assistant `config/custom_components/` directory.
 
 2. Restart Home Assistant.

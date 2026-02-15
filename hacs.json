@@ -1,0 +1,7 @@
+{
+  "name": "Take Turns",
+  "hacs": "1.6.0",
+  "domains": ["take_turns"],
+  "iot_class": "Local Polling",
+  "homeassistant": "2023.1.0"
+}
