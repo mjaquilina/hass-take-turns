@@ -1,0 +1,47 @@
+# Example configuration.yaml for Take Turns integration
+
+take_turns:
+  # Example 1: Bedtime story rotation
+  bedtime_story:
+    name: "Bedtime Story Reader"
+    people:
+      - Mom
+      - Dad
+      - Grandma
+  
+  # Example 2: Dish duty rotation
+  dishes:
+    name: "Dish Duty"
+    people:
+      - Alice
+      - Bob
+      - Charlie
+  
+  # Example 3: Movie picker
+  movie_night:
+    name: "Movie Chooser"
+    people:
+      - Sarah
+      - Mike
+      - Jenny
+      - Tom
+
+# Example automation to rotate every night
+automation:
+  - alias: "Rotate Bedtime Story Reader Nightly"
+    trigger:
+      - platform: time
+        at: "20:00:00"
+    action:
+      - service: take_turns.next_turn
+        data:
+          entity_id: bedtime_story
+  
+  - alias: "Rotate Dish Duty After Dinner"
+    trigger:
+      - platform: time
+        at: "19:30:00"
+    action:
+      - service: take_turns.next_turn
+        data:
+          entity_id: dishes

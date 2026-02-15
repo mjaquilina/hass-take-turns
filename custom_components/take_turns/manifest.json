@@ -1,0 +1,10 @@
+{
+  "domain": "take_turns",
+  "name": "Take Turns",
+  "documentation": "https://github.com/mjaquilina/hass-take-turns",
+  "codeowners": [],
+  "requirements": [],
+  "version": "1.0.0",
+  "iot_class": "local_polling",
+  "config_flow": true
+}

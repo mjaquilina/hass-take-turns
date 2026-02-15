@@ -1,0 +1,36 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add Take Turns Entity",
+        "description": "Create a new rotation tracker. The entity ID will be used as the sensor identifier (e.g., 'homework_helper' becomes 'sensor.homework_helper'). Enter people as a comma-separated list.",
+        "data": {
+          "entity_id": "Entity ID (e.g., bedtime_story)",
+          "name": "Friendly Name (e.g., Bedtime Story Reader)",
+          "people": "People (comma-separated, e.g., Tony, Maria)"
+        }
+      }
+    },
+    "error": {
+      "need_at_least_two": "You need at least 2 people in the rotation"
+    },
+    "abort": {
+      "already_configured": "This entity ID is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Update Take Turns Entity",
+        "description": "Modify the name or people list. Enter people as a comma-separated list. Note: The entity ID cannot be changed after creation.",
+        "data": {
+          "name": "Friendly Name",
+          "people": "People (comma-separated)"
+        }
+      }
+    },
+    "error": {
+      "need_at_least_two": "You need at least 2 people in the rotation"
+    }
+  }
+}
